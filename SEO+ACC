@@ -1,0 +1,34 @@
+Corrections SEO : 
+
+-trouver comment alléger le poids des photos? donner la taille des photos au contenant pour toutes (et changer format vers du next gen?)
+-changer des divs?
+-remettre les bonnes valeurs pour les media queries? (tablette et mobile) + voir si css est bon dans les media queries
+
+DONE : 
+-donner un <html lang="fr">
+-placer  le top header et header, renommer bottom-header dans une balise header (voir avec mentor pour le sticky sur toute la page et comment le régler)
+-de "about" à "quote", le contenir dans un "main" 
+-renommer le div de "contact" en "footer"
+-compresser les images
+-nav a la place du div pour le top header
+-mettre un cursor pointer sur les section nav pills
+-ajout des alts pour les photos
+-ajouter une balise canonique
+-indexation de la page avec un meta name "robots" content="index, follow"
+
+
+
+
+Corrections accessibilité : 
+
+-grossir les chevrons du caroussel et changer couler? ou netb en bordure? + voir c'est quoi le aria hidden sur les chevrons
+-changer par une autre couleur de la charte graphique les mauvais raport de contraste
+-grossir les tirets centraux des chevrons de carrousel aussi
+-remplir l'alt de toutes les images pour l'accessibilité
+-text alternatif à ajouter au lien instagram
+-texte du about à améliorer, police avec aperture et contrepoint pas etroits, espacement suffisant.
+-ajouter les aria : aria-label="" pour section et nav;  role="" pour le reste (ex: form, main, header, etc...voir cour sur aria);identifier les regions, ordre de lecture, nommage des éléments.
+(il existe deux nzv, dans le header et le footer, veuillez à nommer distinctement les deux, voir cours)
+
+DONE : 
+
