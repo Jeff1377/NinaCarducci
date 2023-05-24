@@ -27,7 +27,7 @@ body {
 .nav ul {
 	display: flex;
 	list-style-type: none;
-	font-size: 14px;
+	font-size: 18px;
 	margin-bottom: 0;
 }
 
@@ -91,9 +91,9 @@ body {
 	width: 60%;
 }
 
-#about-me p {
+#about-me h5 {
 	width: 80%;
-	font-size: 14px;
+	word-spacing: 0.2em;
 }
 
 #gallery {
@@ -278,7 +278,7 @@ input[type="submit"] {
 		margin-bottom: 1em;
 	}
 
-	#about-me h6, #about-me p {
+	#about-me h4, #about-me h5 {
 		width: 100%;
 	}
 }
