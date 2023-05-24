@@ -198,7 +198,7 @@
     createLightBox(gallery, lightboxId, navigation) {
       gallery.append(`<div class="modal fade" id="${
         lightboxId ? lightboxId : "galleryLightbox"
-      }" tabindex="-1" role="dialog" aria-hidden="true">
+      }" tabindex="-1" role="dialog" aria-label="Passer à la vue précédente" aria-label="Passer à la vue suivante">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-body">
