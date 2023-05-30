@@ -5995,7 +5995,7 @@ textarea.form-control-lg {
 }
 
 .carousel-item .d-block {
-  width: 80%;
+  width: 100%;
 }
 
 @media (prefers-reduced-motion: reduce) {
