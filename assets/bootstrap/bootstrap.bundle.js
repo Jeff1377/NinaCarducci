@@ -571,7 +571,7 @@
 
       if (isNative) {
         evt = document.createEvent('HTMLEvents');
-        evt.initEvent(typeEvent, bubbles, true);
+        evt = new Event(typeEvent, bubbles, true);
       } else {
         evt = new CustomEvent(event, {
           bubbles,
