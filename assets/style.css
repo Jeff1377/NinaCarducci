@@ -52,10 +52,6 @@ body {
 	position: relative;
 }
 
-.picture.left {
-	height: 358.02px;
-}
-
 .picture.left::before {
 	content: ' ';
 	background-color: #E5975F;
@@ -67,9 +63,13 @@ body {
 	z-index: -1;
 }
 
+.picture {
+	flex: 1;
+	z-index: 0;
+}
+
 .picture img {
 	width: 100%;
-
 }
 
 #about-me {
