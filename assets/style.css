@@ -109,7 +109,7 @@ body {
 	justify-content: center;
 }
 /*ajout du cursor pointer pour les catégories de la gallerie*/
-.nav-pills .nav-link.active, .nav-pills {
+.nav-pills .nav-link.active .nav-pills {
 	cursor: pointer;
 }
 
