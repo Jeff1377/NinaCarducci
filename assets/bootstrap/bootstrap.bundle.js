@@ -586,7 +586,6 @@
             get() {
               return args[key];
             }
-
           });
         });
       }
@@ -602,7 +601,6 @@
       if (evt.defaultPrevented && typeof jQueryEvent !== 'undefined') {
         jQueryEvent.preventDefault();
       }
-
       return evt;
     }
 
@@ -643,7 +641,6 @@
       if (elementMap.has(element)) {
         return elementMap.get(element).get(key) || null;
       }
-
       return null;
     },
 
@@ -659,7 +656,6 @@
         elementMap.delete(element);
       }
     }
-
   };
 
   /**
@@ -725,7 +721,6 @@
     static get EVENT_KEY() {
       return `.${this.DATA_KEY}`;
     }
-
   }
 
   /**
@@ -824,7 +819,6 @@
         data[config](this);
       });
     }
-
   }
   /**
    * ------------------------------------------------------------------------
@@ -890,7 +884,6 @@
         }
       });
     }
-
   }
   /**
    * ------------------------------------------------------------------------
@@ -936,7 +929,6 @@
     if (val === '' || val === 'null') {
       return null;
     }
-
     return val;
   }
 
@@ -985,7 +977,6 @@
         left: element.offsetLeft
       };
     }
-
   };
 
   /**
@@ -1055,7 +1046,6 @@
       const focusables = ['a', 'button', 'input', 'textarea', 'select', 'details', '[tabindex]', '[contenteditable="true"]'].map(selector => `${selector}:not([tabindex^="-"])`).join(', ');
       return this.find(focusables, element).filter(el => !isDisabled(el) && isVisible(el));
     }
-
   };
 
   /**
@@ -1087,6 +1077,7 @@
     wrap: true,
     touch: true
   };
+
   const DefaultType$a = {
     interval: '(number|boolean)',
     keyboard: 'boolean',
@@ -1095,6 +1086,7 @@
     wrap: 'boolean',
     touch: 'boolean'
   };
+
   const ORDER_NEXT = 'next';
   const ORDER_PREV = 'prev';
   const DIRECTION_LEFT = 'left';
@@ -1103,6 +1095,7 @@
     [ARROW_LEFT_KEY]: DIRECTION_RIGHT,
     [ARROW_RIGHT_KEY]: DIRECTION_LEFT
   };
+  
   const EVENT_SLIDE = `slide${EVENT_KEY$a}`;
   const EVENT_SLID = `slid${EVENT_KEY$a}`;
   const EVENT_KEYDOWN = `keydown${EVENT_KEY$a}`;
