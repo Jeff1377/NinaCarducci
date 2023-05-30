@@ -52,6 +52,10 @@ body {
 	position: relative;
 }
 
+.picture.left {
+	height: 358.02px;
+}
+
 .picture.left::before {
 	content: ' ';
 	background-color: #E5975F;
@@ -61,12 +65,6 @@ body {
 	bottom: 0;
 	left: 0;
 	z-index: -1;
-}
-
-.picture {
-	flex: 1;
-	margin: 0 20px;
-	z-index: 0;
 }
 
 .picture img {
