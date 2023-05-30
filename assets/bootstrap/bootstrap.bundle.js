@@ -570,13 +570,11 @@
       }
 
       if (isNative) {
-        evt = new Event(typeEvent, {
-          bubbles: bubbles,
-          cancelable: true
-        });
+        evt = document.createEvent('HTMLEvents');
+        evt.initEvent(typeEvent, bubbles, true);
       } else {
         evt = new CustomEvent(event, {
-          bubbles: bubbles,
+          bubbles,
           cancelable: true
         });
       } // merge custom information in our event
