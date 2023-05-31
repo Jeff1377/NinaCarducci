@@ -7,7 +7,7 @@
       if (options.lightBox) {
         $.fn.mauGallery.methods.createLightBox(
           $(this),
-          options.lightboxId,navigation
+          options.lightboxId,
           options.navigation
         );
       }
