@@ -2,10 +2,12 @@ body {
 	max-width: 1920px;
 	margin: auto;
 }
+
 * {
 	font-family: 'Inter';
 	font-style: normal;
 }
+
 .top-header {
 	background-color: white;
 	position: sticky;
@@ -49,10 +51,6 @@ body {
 	padding-block: 100px;
 	position: relative;
 }
-.picture.left {
-	width: 373px;
-	height: 372px;
-}
 
 .picture.left::before {
 	content: ' ';
@@ -72,7 +70,8 @@ body {
 }
 
 .picture img {
-	width: 100%;
+	max-width: 100%;
+	height: auto;
 }
 
 #about-me {
@@ -84,13 +83,15 @@ body {
 	margin-bottom: 60px;
 	font-size: 30px;
 }
+
 .about-me-introduction {
 	font-family: 'Spectral';
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
 }
-#about-me p {
+
+#about-me h5 {
 	width: 80%;
 	font-size: 14px;
 }
@@ -98,13 +99,16 @@ body {
 #gallery {
 	/*	min-height: 100vh; */
 }
+
 .title{
 	text-align: center;
 	padding-block: 2em;
 }
+
 .gallery .nav {
 	justify-content: center;
 }
+
 /*ajout des cursor pointers*/
 .nav-pills .nav-link.active, .nav-pills {
 	cursor: pointer;
@@ -120,17 +124,19 @@ body {
 .nav-pills .nav-link {
 	color: #000
 }
+
 .item-column {
 	position: relative;
 	margin-bottom: 0 !important;
 	padding: 0;
 }
+
 .item-column::after{
 	content: "";
 	display: block;
 	padding-bottom: 100%;
-
 }
+
 .gallery-item {
 	position: absolute;
 	width: 100%;
@@ -138,6 +144,7 @@ body {
 	object-fit: cover;
 	padding: .5em;
 }
+
 .mg-prev, .mg-next {
 	width: 30px;
 	height: 30px;
@@ -159,8 +166,8 @@ body {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
-
 }
+
 .quote-author {
 	font-family: Spectral;
 	font-weight: 800;
@@ -187,7 +194,6 @@ body {
 	justify-content: space-between;
 	display: flex;
 	padding : 2em 0;
-
 }
 
 .service {
@@ -212,11 +218,6 @@ body {
 
 #contact .container {
 	display: flex;
-}
-
-.picture.right {
-	width: 359px;
-	height: 358px;
 }
 
 .picture.right::before {
@@ -286,11 +287,12 @@ input[type="submit"] {
 @media all and (max-width: 1000px) {
 	#about{
 		flex-direction: column;
-
 	}
+
 	.picture {
 		width: 50%;
 	}
+
 	.picture.left::before {
 		width: 100%;
 		height: 30%;
@@ -300,24 +302,28 @@ input[type="submit"] {
 		left: 0;
 		z-index: -1;
 	}
-	.about-me-title{
+
+	.about-me-title {
 		text-align: center;
 		margin-top: 1em;
 	}
+
 	#services .container {
 		flex-direction: column;
 	}
+
 	.service {
 		width: 100%;
 		max-width: 100%;
 		height: auto;
 		margin: 2em 0
 	}
-	.service-description{
+
+	.service-description {
 		margin-bottom: 1em;
 	}
 
-	#services .container::before{
+	#services .container::before {
 		width: 30%;
 		height: 100%;
 		bottom: 0;
@@ -347,31 +353,38 @@ input[type="submit"] {
 		flex-direction: column;
 		padding-inline: 0;
 	}
+
 	.top-header .nav, .top-header .nav ul {
 		width: 100%;
 		padding: 0 0 0 0;
 	}
+
 	.top-header .nav li {
 		flex: 1;
 		padding-block: 1em;
 		text-align: center;
 	}
+
 	.picture.left::before, .picture.right::before {
 		height: 150px;
 	}
+
 	#services .container {
 		align-items: center;
 	}
 	.service {
 		max-width: 90%;
 	}
+
 	#about, #contact {
 		padding-inline: 2em;
 		padding-block: 2em;
 	}
+
 	form {
 		width: 100%;
 	}
+
 	.picture {
 		width: 80%;
 	}
