@@ -71,7 +71,9 @@ body {
 	width: 100%;
 }
 
-
+#about-me {
+	flex: 2;
+}
 
 .about-me-title {
 	margin-top: 1em;
