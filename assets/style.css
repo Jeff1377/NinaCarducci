@@ -71,7 +71,7 @@ body {
 }
 /*et avec la width et la height dans le html pour prévenir le responsive*/
 .picture img {
-	width: 100%;
+	max-width: 100%;
 	height: auto;
 }
 
