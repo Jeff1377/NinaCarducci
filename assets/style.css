@@ -124,6 +124,8 @@ body {
 
 .item-column {
 	position: relative;
+	margin-bottom: 0 !important;
+	padding: 0;
 }
 
 .item-column::after{
