@@ -273,11 +273,11 @@ input[type="submit"] {
 		align-items: center;
 	}
 
-	.about-me__title {
+	.about-me-title {
 		margin-bottom: 1em;
 	}
 
-	#about-me h6, #about-me p {
+	#about-me h4, #about-me h5 {
 		width: 100%;
 	}
 }
