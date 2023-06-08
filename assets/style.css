@@ -351,7 +351,6 @@ input[type="submit"] {
 @media all and (max-width: 650px) {
 	.top-header {
 		flex-direction: column;
-		padding-inline: 0;
 	}
 
 	.top-header .nav, .top-header .nav ul {
