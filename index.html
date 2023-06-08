@@ -44,14 +44,18 @@
 <header>
 	<nav class="top-header">      
 		<h2 class="name">Nina Carducci</h2>
-		<div class="nav">   
-			<ul>
-				<li><a href="#about">À propos</a></li>
-				<li><a href="#gallery">Galerie</a></li>
-				<li><a href="#services">Service</a></li>
-				<li><a href="#contact">Contact</a></li>
-				<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.avif" width="20" height="20" alt="Icone du lien instagram" title="image tooltip"></a></li>
-			</ul>
+		<div class="nav" itemscope itemtype="http://schema.org/SiteNavigationElement">   
+		<ul>
+			<li><a href="#about" itemprop="url"><span itemprop="name">À propos</span></a></li>
+			<li><a href="#gallery" itemprop="url"><span itemprop="name">Galerie</span></a></li>
+			<li><a href="#services" itemprop="url"><span itemprop="name">Service</span></a></li>
+			<li><a href="#contact" itemprop="url"><span itemprop="name">Contact</span></a></li>
+			<li>
+			<a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank" itemprop="url">
+				<img src="assets/images/instagram.avif" width="20" height="20" alt="Icone du lien instagram" title="image tooltip">
+			</a>
+			</li>
+		</ul>
 		</div>
 	</nav>
 	<section id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -60,7 +64,7 @@
 			<button data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
 			<button data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
 		</div>
-		<div class="carousel-inner">
+		<div class="carousel-inner" itemscope itemtype="http://schema.org/ImageGallery">
 			<div class="carousel-item active">
 				<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.avif" class="img-fluid" width="1872" height="867" alt="Homme sur passage-piéton" title="image tooltip" />
 			</div>
@@ -82,7 +86,7 @@
 	</section>
 </header>
 <main>
-	<section id="about">
+	<section id="about" itemscope itemtype="http://schema.org/Person">
 		<div class="picture left">
 			<img src="./assets/images/nina.avif" width="543" height="543" alt="Photo de Nina Carducci" title="image tooltip" />
 		</div>
@@ -94,9 +98,9 @@
 		</div>
 	</section>
 	<section id="gallery">
-		<div class="container py-3">
+		<div class="container py-3" itemscope itemtype="http://schema.org/CreativeWork">
 			<h2 class="title">Portfolio</h2>
-			<div class="gallery" style="display: none">
+			<div class="gallery" style="display: none" itemscope itemtype="http://schema.org/ImageGallery">
 				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.avif" alt="Austin Neill en concert" title="image tooltip" />
 				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.avif" alt="Foule au concert d'Aaron Paul" />
 				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.avif" alt="Plan américain d'Ali Morshedlou" title="image tooltip" />
@@ -109,7 +113,7 @@
 			</div>
 		</div>
 	</section>
-	<aside class="quote">
+	<aside class="quote" itemscope itemtype="http://schema.org/Quote">
 		<figure>
 			<blockquote>
 				<h1 class="quote-text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</h1>
@@ -117,10 +121,10 @@
 			<figcaption class="quote-author">- Richard Avedon</figcaption>
 		</figure>
 	</aside>
-	<section id="services">
+	<section id="services" itemscope itemtype="http://schema.org/Service">
 		<h2 class="title">Mes services</h2>
 		<div class="container">
-			<div class="service">
+			<div class="service" itemscope itemtype="https://schema.org/Offer">
 				<div class="service-description">
 					<h2>Shooting photo</h2>
 					<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
@@ -130,7 +134,7 @@
 					<p>Matériel, déplacement inclus</p>
 				</div>
 			</div>
-			<div class="service">
+			<div class="service" itemscope itemtype="http://schema.org/Offer">
 				<div class="service-description">
 					<h2>Retouches</h2>
 					<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
@@ -140,7 +144,7 @@
 					<p>2 AR par photo</p>
 				</div>
 			</div>
-			<div class="service">
+			<div class="service" itemscope itemtype="http://schema.org/Offer">
 				<div class="service-description">
 					<h2>Album photos</h2>
 					<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
@@ -152,7 +156,7 @@
 			</div>
 		</div>
 	</section>
-	<aside class="quote">
+	<aside class="quote" itemscope itemtype="http://schema.org/Quote">
 		<figure>
 			<blockquote>
 				<h1 class="quote-text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</h1>
@@ -161,23 +165,52 @@
 		</figure>
 	</aside>
 </main>
-<footer id="contact">
+<footer id="contact" itemscope itemtype="http://schema.org/ContactPage">
 	<div class="container">
 		<div class="form-container">
 			<h2>Une question ? Une demande de devis ?</h2>
 			<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 			<form action="" method="post">
+				<label for="telephone">Numéro de téléphone</label>
+                <span itemprop="telephone">0123456789</span>
+                <label for="opening-hours">Horaires d'ouverture</label>
+                <div itemprop="openingHours">Horaires d'ouverture : du lundi au vendredi, de 9h à 18h</div>
 				<label for="nom">Nom</label>
 				<input type="text" name="nom" id="nom" placeholder="Entre ton nom">
 				<label for="email">Email</label>
 				<input type="email" name="email" id="email">
 				<label for="message">Message</label>
 				<textarea name="message" id="message" cols="30" rows="10"></textarea>
-				<input type="submit" value="Envoyer"/>
+				<input type="submit" value="Envoyer">
 			</form>
-		</div>
-		<div class="picture right">
-			<img src="./assets/images/camera.avif" width="418" height="418" alt="Un appareil photo" title="image tooltip" />
+			<span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+				<span itemprop="streetAddress">68 avenue Alsace-Lorraine</span>,
+				<span itemprop="postalCode">33200</span>
+				<span itemprop="addressLocality">Bordeaux</span>,
+				<span itemprop="addressCountry">France</span>
+			</span>
+
+			<span itemprop="telephone">+33 1 23 45 67 89</span>
+
+			<div itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification">
+			<span itemprop="dayOfWeek" itemscope itemtype="http://schema.org/DayOfWeek">
+				<meta itemprop="name" content="Monday" />
+			</span>
+			<span itemprop="dayOfWeek" itemscope itemtype="http://schema.org/DayOfWeek">
+				<meta itemprop="name" content="Tuesday" />
+			</span>
+			<span itemprop="dayOfWeek" itemscope itemtype="http://schema.org/DayOfWeek">
+				<meta itemprop="name" content="Wednesday" />
+			</span>
+			<span itemprop="dayOfWeek" itemscope itemtype="http://schema.org/DayOfWeek">
+				<meta itemprop="name" content="Thursday" />
+			</span>
+			<span itemprop="dayOfWeek" itemscope itemtype="http://schema.org/DayOfWeek">
+				<meta itemprop="name" content="Friday" />
+			</span>
+			<span itemprop="opens">10:00</span> -
+			<span itemprop="closes">19:00</span>
+			</div>
 		</div>
 	</div>
 </footer>
