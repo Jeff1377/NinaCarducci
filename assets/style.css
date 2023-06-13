@@ -21,19 +21,19 @@ body {
 	font-size: 26px;
 }
 
-.nav ul {
+nav ul {
 	display: flex;
 	list-style-type: none;
 	font-size: 16px;
 }
 
-.nav li {
+nav li {
 	padding-inline: 10px;
 }
 
-.nav a {
+nav a {
 	text-decoration: none;
-	color: #000;
+	color: #000
 }
 
 .social-link img {
@@ -65,9 +65,8 @@ body {
 	z-index: 0;
 }
 
-/*et avec la width et la height dans le html pour prévenir le responsive*/
 .picture img {
-	max-width: 100%;
+	width: 100%;
 	height: auto;
 }
 
@@ -217,6 +216,10 @@ body {
 
 #contact .container {
 	display: flex;
+}
+.picture.right .additional-info {
+	font-size: 16px;
+	margin-top: 10px;
 }
 
 .picture.right::before {
